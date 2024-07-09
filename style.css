@@ -29,7 +29,7 @@ body{
 
 .home{
     display: flex;
-    height: 75vh;
+    /* height: 75vh; */
 }
 .home .left{
     display: flex;
@@ -80,11 +80,11 @@ body{
 }
 
 .about{
-    height: 75vh;
+    /* height: 75vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0rem 10rem 0rem 7rem;
+    margin: 0rem 10rem 5rem 7rem;
     gap: 2rem;
 }
 
@@ -118,8 +118,8 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    height: 40vh;
-    margin: 0rem 10rem 0rem 10rem;
+    /* height: 40vh; */
+    margin: 5rem 10rem 5rem 10rem;
 }
 
 .skills h1{
