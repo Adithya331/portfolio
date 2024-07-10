@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     color: #ffffff;
+    box-sizing: border-box;
 }
 body{
     font-size: larger;
     font-family: Poppins;
-    background-color: #000000;
+    background-color: #141414;
 }
 
 .navbar{
@@ -15,8 +16,20 @@ body{
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    background-color: #000000;
     padding: 1.5rem;
+}
+
+.navbar h1{
+    color: #db0000;    
+    font-weight: 500;
+    background: linear-gradient(to right, #db0000, #c26767); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar .logo{
+    display: flex;
+    gap: 1rem;
 }
 
 .navbar ul{
@@ -27,9 +40,18 @@ body{
     margin-right: 2rem; 
 }
 
+.navbar .right .nav a{
+    text-decoration: none;
+    color: inherit; /* Ensures the link inherits the color of the parent element */
+    transition: color 0.3s ease;
+}
+
+.navbar .right .nav a:hover{
+    color: #d82d2d;
+}
+
 .home{
     display: flex;
-    /* height: 75vh; */
 }
 .home .left{
     display: flex;
@@ -40,7 +62,6 @@ body{
     color: #ffffff;
 }
 .home h1{
-    /* color: #db0000; */
     font-weight: 500;
     margin-top: 4rem;
     background: linear-gradient(to right, #db0000, #c26767); 
@@ -77,10 +98,15 @@ body{
     border: none;
     justify-content: end;
     width: 9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.left .download button:hover{
+    background-color: #d82d2d;
+    transform: scale(1.05);
 }
 
 .about{
-    /* height: 75vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,8 +118,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 3rem; */
 }
+
+.about .right img{
+    transition: transform 0.3s ease;
+}
+
+.about .right img:hover{
+    transform: scale(1.05);
+}
+
 .about .left{
     color: #ffffff;
     display: flex;
@@ -101,7 +135,6 @@ body{
     gap: 1rem;
     align-items: center;
     font-size: large;
-    
 }
 
 .about h1{
@@ -118,14 +151,12 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /* height: 40vh; */
     margin: 5rem 10rem 5rem 10rem;
 }
 
 .skills h1{
     color: #db0000;    
     font-weight: 500;
-
     background: linear-gradient(to right, #db0000, #c26767); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -145,6 +176,12 @@ body{
     width: 7rem;
     display: flex;
     justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills li:hover{
+    background-color: #d82d2d;
+    transform: scale(1.05);
 }
 
 .experience{
@@ -154,6 +191,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .experience h1{
     font-weight: 500;
     background: linear-gradient(to right, #db0000, #c26767); 
@@ -167,6 +205,11 @@ body{
     height: 100px;
     padding: 1rem;
     border-radius: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.experience img:hover{
+    transform: scale(1.05);
 }
 
 .experience .company{
@@ -179,9 +222,197 @@ body{
     font-size: medium;
 }
 
+.experience .company .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .experience .company .right{
     width: 30rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.project-h1{
+    margin-top: 4rem;
+    color: #db0000;    
+    font-weight: 500;
+    text-align: center;
+    background: linear-gradient(to right, #db0000, #c26767); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projects{
+    padding: 5rem;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project{
+    font-size: medium;
+    display: flex;   
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project .left img{
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.project .left img:{
+    transform: scale(1.05);
+}
+
+.project .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: #db0000;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    width: 40rem;
+}
+
+.project .right ul{
+    list-style-type: square;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact h1{
+    color: #db0000;    
+    font-weight: 500;
+    background: linear-gradient(to right, #db0000, #c26767); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.contact form input, .contact form textarea{
+    border-radius:.5rem;
+    font-size:medium;
+    width: 30rem;
+    padding: 1rem;
+    border: 2px solid;
+    border-color:#db0000;
+    outline: none;
+    background-color: #263238;
+    font-family: Poppins;
+}
+
+.contact form button{
+    background-color: #db0000;
+    color: #ffffff;
+    font-size: large;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    justify-content: end;
+    width: 9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact form button:hover{
+    background-color: #d82d2d;
+    transform: scale(1.05);
+}
+
+.contact form input:focus, .contact form textarea:focus{
+    border-color: #d82d2d;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.home .right img {
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(100);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.home .left{
+    animation: slideOut 1s ease-out forwards;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .quicklinks{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer .quicklinks h1{
+    font-weight: 500;
+    background: linear-gradient(to right, #db0000, #c26767); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer ul li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer ul li a{
+    text-decoration: none;
 }

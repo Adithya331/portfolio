@@ -10,13 +10,17 @@
 
 <body>
     <div class="navbar">
-        <img src="#">
+        <div class="logo">
+            <img src="./assets/tag.png">    <h1>Portfolio</h1> 
+        </div>
+        
         <div class="right">
             <ul class="nav">
-                <li>Home</li>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Contact us</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -33,14 +37,14 @@
                     but also highly functional and responsive. </p>
             </div>
             <div class="download">
-                <button class="button"><img src="./download-icon.png">Resume</button>
+                <button class="button"><img src="./assets/download-icon.png">Resume</button>
                 <button>Projects</button>
             </div>
 
         </div>
 
         <div class="right">
-            <img src="./developer.png" height="500px" width="500px">
+            <img src="./assets/developer.png" height="500px" width="500px">
         </div>
 
     </div>
@@ -48,10 +52,10 @@
     <div class="about">
 
         <div class="right">
-            <img src="./about.png"  height="400px" width="400px">
+            <img src="./assets/about.png"  height="400px" width="400px">
         </div>
 
-        <div class="left">
+        <div class="left" id="about">
             <h1>About Me</h1>
             <p>I am a dedicated web developer with expertise in JavaScript, HTML, and CSS. My passion for web development drives
                 me to create stunning and user-friendly web experiences. With a keen eye for design and a love for coding, I
@@ -65,7 +69,7 @@
         
     </div>
 
-    <div class="skills">
+    <div class="skills" id="skills">
         <h1>Tech Stack</h1>
         <ul class="tech-list">
             <li>HTML</li>
@@ -83,12 +87,12 @@
         <h1>Experience</h1>
         <div class="company">
             <div class="left">
-                <img src="./spa.png">
+                <img src="./assets/spa.png">
             </div>
             
             <div class="right">
-                <h4>SPA Enterprices</h4>
-                <p>- Associate Software Developer</p>
+                <h3>SPA Enterprices</h3>
+                <h4>Associate Software Developer</h4>
                 <ul>
                     <li>Developed in depth knowledge of workflow and component behavior in React.JS.</li>
                     <li>Utilized agile methodologiesto streamline the development process, improving project delivery timelines by 20% </li>
@@ -100,24 +104,83 @@
         </div>
     </div>
 
+    <h1 class="project-h1" id="projects" >Projects</h1>
+
     <div class="projects">
+        
         <div class="project">
             <div class="left">
-
+                
+                <img src="./assets/NoteLand.png" height="150px" width="300px"> 
             </div>
             <div class="right">
-                
+                <h3>NoteLand</h3>
+                <ul>
+                    <li>A note-taking app with a sleek design.</li>
+                    <li>Features: User authentication, real-time sync, local storage for saving notes</li>
+                    <li>Technologies Used: HTML, CSS, JavaScript</li>
+                </ul>
             </div>
         </div>
+        <div class="project">
+            <div class="left">
+                
+                <img src="./assets/search-engine.png" height="150px" width="300px"> 
+            </div>
+            <div class="right">
+                <h3>Search Engine</h3>
+                <ul>
+                <li>Developed a search engine which uses Algolia search for better searching.</li>
+                
+                <li>Features: Fast and relevant search results, user-friendly interface</li>
+                <li>Technologies Used: HTML, CSS, JavaScript</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="left">
+                <img src="./assets/picafood.png" height="150px" width="300px" alt="Restaurant Website Project Image">
+            </div>
+            <div class="right">
+                <h3>Restaurant Website</h3>
+                <ul>
+                    <li>Project Description: Developed a restaurant website with the best user experience.</li>
+                    <li>Technologies Used: HTML, CSS, JavaScript</li>
+                    <li>Features: Responsive design, online menu, contact form, user reviews</li>
+                </ul>
+            </div>
+        
     </div>
 
-    <div class="contact">
+    <div class="footer">
+
+        <div class="contact" id="contact">
+            <h1>Contact</h1>
+    
+            <form>
+                <input type="text" placeholder="Enter name">
+                <input type="email" placeholder="Enter email">
+                <textarea placeholder="Enter message"></textarea>
+                <button>Submit</button>
+            </form>
+    
+        </div>
+
+        <div class="quicklinks">
+            <h1>Quick links</h1>
+            <ul>
+                <li><img src="./assets/linkedin.png" height="30px" width="30px"><a href="https://www.linkedin.com/in/velaparthi-adithya-1a0798215/">LinkedIn</a></li>
+                <li><img src="./assets/github.png" height="30px" width="30px"><a href="https://github.com/Adithya331">GitHub</a></li>
+                <li><img src="./assets/mail.png" height="30px" width="30px">velaparthiadithya@gmail.com</li>
+            </ul>
+        </div>
+
 
     </div>
+    
 
-    <div class="quicklinks">
-
-    </div>
+    
 
 
     </div>
