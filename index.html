@@ -10,17 +10,19 @@
 
 <body>
     <div class="navbar">
-        <div class="logo">
-            <img src="./assets/tag.png">    <h1>Portfolio</h1> 
+
+        <div class="logo" id="home">
+            <img src="./assets/tag.png">
+            <h1>Portfolio</h1>
         </div>
-        
+
         <div class="right">
             <ul class="nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -37,8 +39,8 @@
                     but also highly functional and responsive. </p>
             </div>
             <div class="download">
-                <button class="button"><img src="./assets/download-icon.png">Resume</button>
-                <button>Projects</button>
+                <button class="button" onclick="downloadResume()"><img src="./assets/download-icon.png">Resume</button>
+                <a href="#projects"><button>Projects</button></a>
             </div>
 
         </div>
@@ -52,21 +54,27 @@
     <div class="about">
 
         <div class="right">
-            <img src="./assets/about.png"  height="400px" width="400px">
+            <img src="./assets/about.png" height="400px" width="400px">
         </div>
 
         <div class="left" id="about">
             <h1>About Me</h1>
-            <p>I am a dedicated web developer with expertise in JavaScript, HTML, and CSS. My passion for web development drives
-                me to create stunning and user-friendly web experiences. With a keen eye for design and a love for coding, I
-                strive to build websites that are not only visually appealing but also highly functional and responsive. I
-                am particularly skilled at debugging and problem-solving, always eager to tackle challenges head-on and find
-                efficient solutions. When I'm not coding, I enjoy exploring the latest trends in web design, contributing to
-                open-source projects, and connecting with other developers to share knowledge and ideas. Let's collaborate
+            <p>I am a dedicated web developer with expertise in JavaScript, HTML, and CSS. My passion for web
+                development drives
+                me to create stunning and user-friendly web experiences. With a keen eye for design and a love for
+                coding, I
+                strive to build websites that are not only visually appealing but also highly functional and responsive.
+                I
+                am particularly skilled at debugging and problem-solving, always eager to tackle challenges head-on and
+                find
+                efficient solutions. When I'm not coding, I enjoy exploring the latest trends in web design,
+                contributing to
+                open-source projects, and connecting with other developers to share knowledge and ideas. Let's
+                collaborate
                 to bring innovative ideas to life!
             </p>
         </div>
-        
+
     </div>
 
     <div class="skills" id="skills">
@@ -80,7 +88,7 @@
             <li>GIT</li>
             <li>GitHub</li>
 
-            </ul>
+        </ul>
     </div>
 
     <div class="experience">
@@ -89,29 +97,31 @@
             <div class="left">
                 <img src="./assets/spa.png">
             </div>
-            
+
             <div class="right">
                 <h3>SPA Enterprices</h3>
                 <h4>Associate Software Developer</h4>
                 <ul>
                     <li>Developed in depth knowledge of workflow and component behavior in React.JS.</li>
-                    <li>Utilized agile methodologiesto streamline the development process, improving project delivery timelines by 20% </li>
-                    <li>Collaborated effectively with cross-functional teams dispersed globally to ensure smooth communication and efficient 
+                    <li>Utilized agile methodologiesto streamline the development process, improving project delivery
+                        timelines by 20% </li>
+                    <li>Collaborated effectively with cross-functional teams dispersed globally to ensure smooth
+                        communication and efficient
                         project execution.</li>
                 </ul>
             </div>
-            
+
         </div>
     </div>
 
-    <h1 class="project-h1" id="projects" >Projects</h1>
+    <h1 class="project-h1" id="projects">Projects</h1>
 
     <div class="projects">
-        
+
         <div class="project">
             <div class="left">
-                
-                <img src="./assets/NoteLand.png" height="150px" width="300px"> 
+
+                <img src="./assets/NoteLand.png" height="150px" width="300px">
             </div>
             <div class="right">
                 <h3>NoteLand</h3>
@@ -124,16 +134,16 @@
         </div>
         <div class="project">
             <div class="left">
-                
-                <img src="./assets/search-engine.png" height="150px" width="300px"> 
+
+                <img src="./assets/search-engine.png" height="150px" width="300px">
             </div>
             <div class="right">
                 <h3>Search Engine</h3>
                 <ul>
-                <li>Developed a search engine which uses Algolia search for better searching.</li>
-                
-                <li>Features: Fast and relevant search results, user-friendly interface</li>
-                <li>Technologies Used: HTML, CSS, JavaScript</li>
+                    <li>Developed a search engine which uses Algolia search for better searching.</li>
+
+                    <li>Features: Fast and relevant search results, user-friendly interface</li>
+                    <li>Technologies Used: HTML, CSS, JavaScript</li>
                 </ul>
             </div>
         </div>
@@ -150,40 +160,46 @@
                     <li>Features: Responsive design, online menu, contact form, user reviews</li>
                 </ul>
             </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="contact" id="contact">
+                <h1>Contact</h1>
+
+                <form>
+                    <input type="text" placeholder="Enter name">
+                    <input type="email" placeholder="Enter email">
+                    <textarea placeholder="Enter message"></textarea>
+                    <button>Submit</button>
+                </form>
+
+            </div>
+
+            <div class="quicklinks">
+                <h1>Quick links</h1>
+                <ul>
+                    <li><img src="./assets/linkedin.png" height="30px" width="30px"><a
+                            href="https://www.linkedin.com/in/velaparthi-adithya-1a0798215/">LinkedIn</a></li>
+                    <li><img src="./assets/github.png" height="30px" width="30px"><a
+                            href="https://github.com/Adithya331">GitHub</a></li>
+                    <li><img src="./assets/mail.png" height="30px" width="30px">velaparthiadithya@gmail.com</li>
+                    <a href="#home"><button>Back to Top</button></a>
+                </ul>
+            </div>
+        </div>
         
     </div>
 
-    <div class="footer">
-
-        <div class="contact" id="contact">
-            <h1>Contact</h1>
-    
-            <form>
-                <input type="text" placeholder="Enter name">
-                <input type="email" placeholder="Enter email">
-                <textarea placeholder="Enter message"></textarea>
-                <button>Submit</button>
-            </form>
-    
-        </div>
-
-        <div class="quicklinks">
-            <h1>Quick links</h1>
-            <ul>
-                <li><img src="./assets/linkedin.png" height="30px" width="30px"><a href="https://www.linkedin.com/in/velaparthi-adithya-1a0798215/">LinkedIn</a></li>
-                <li><img src="./assets/github.png" height="30px" width="30px"><a href="https://github.com/Adithya331">GitHub</a></li>
-                <li><img src="./assets/mail.png" height="30px" width="30px">velaparthiadithya@gmail.com</li>
-            </ul>
-        </div>
-
-
-    </div>
-    
-
-    
-
-
-    </div>
+    <script>
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = './Adithya_resume.pdf'; // Update with the correct path to your resume file
+            link.download = 'Adithya_resume.pdf'; // The name of the file to be downloaded
+            link.click();
+        }
+    </script>
 
 </body>
 

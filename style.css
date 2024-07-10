@@ -82,6 +82,10 @@ body{
     gap: 2rem;
 }
 
+.download a{
+    text-decoration: none;
+}
+
 .button{
     display: flex;
     justify-content: space-evenly;
@@ -246,7 +250,7 @@ body{
 }
 
 .projects{
-    padding: 5rem;
+    padding: 3rem;
     display: flex;
     gap: 4rem;
     flex-direction: column;
@@ -415,4 +419,22 @@ body{
 
 .footer ul li a{
     text-decoration: none;
+}
+
+
+.quicklinks button{
+    background-color: #db0000;
+    color: #ffffff;
+    font-size: large;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    justify-content: end;
+    width: 9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quicklinks button:hover{
+    background-color: #d82d2d;
+    transform: scale(1.05); 
 }
